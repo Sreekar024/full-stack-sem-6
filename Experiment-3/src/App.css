@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #333;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 20px;
+  background: #555;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #777;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #2d2d2d;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.contact-card {
+  background: #3d3d3d;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border-left: 4px solid #007acc;
+}
