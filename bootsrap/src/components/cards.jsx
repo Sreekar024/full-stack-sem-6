@@ -9,35 +9,38 @@ function CardsSection() {
     <Container className="py-5">
       <Row>
         <Col md={4} className="mb-4">
-          <Card>
-            <Card.Body>
+          <Card className="gradient-card hover-lift h-100">
+            <Card.Body className="text-center">
+              <div className="fs-1 mb-3">🌐</div>
               <Card.Title>Web Development</Card.Title>
               <Card.Text>
-                Modern web development using React and Bootstrap components.
+                Modern web development using React, Bootstrap and cutting-edge technologies.
               </Card.Text>
-              <Button variant="primary">Learn More</Button>
+              <Button variant="light">🔍 Discover</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4} className="mb-4">
-          <Card>
-            <Card.Body>
+          <Card className="gradient-card-2 hover-lift h-100">
+            <Card.Body className="text-center">
+              <div className="fs-1 mb-3">🛠️</div>
               <Card.Title>Full Stack</Card.Title>
               <Card.Text>
-                Complete full stack development with frontend and backend.
+                Complete full stack development with modern frontend and robust backend solutions.
               </Card.Text>
-              <Button variant="primary">Learn More</Button>
+              <Button variant="light">⚡ Build</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4} className="mb-4">
-          <Card>
-            <Card.Body>
-              <Card.Title>Bootstrap UI</Card.Title>
+          <Card className="gradient-card-3 hover-lift h-100">
+            <Card.Body className="text-center">
+              <div className="fs-1 mb-3">🎨</div>
+              <Card.Title>UI/UX Design</Card.Title>
               <Card.Text>
-                Responsive design using Bootstrap components and grid system.
+                Beautiful responsive design using Bootstrap components and custom animations.
               </Card.Text>
-              <Button variant="primary">Learn More</Button>
+              <Button variant="light">🎆 Create</Button>
             </Card.Body>
           </Card>
         </Col>

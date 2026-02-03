@@ -5,13 +5,14 @@ import Button from 'react-bootstrap/Button';
 
 function HeroSection() {
   return (
-    <Container fluid className="bg-primary text-white py-5">
+    <Container fluid className="hero-animated text-white py-5">
       <Container>
         <Row className="justify-content-center text-center">
           <Col md={8}>
-            <h1 className="display-4">Welcome to Our Website</h1>
-            <p className="lead">Full Stack Development - Semester 6 Project</p>
-            <Button variant="light" size="lg">Get Started</Button>
+            <h1 className="display-3">🎆 Innovation Starts Here</h1>
+            <p className="lead fs-4">Full Stack Development - Semester 6 | Sreekar's Project</p>
+            <Button className="btn-custom me-3" size="lg">🚀 Explore Now</Button>
+            <Button variant="outline-light" size="lg">📚 Learn More</Button>
           </Col>
         </Row>
       </Container>

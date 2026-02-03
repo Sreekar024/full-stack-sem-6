@@ -1,0 +1,66 @@
+/* Custom gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  border: none;
+  color: white;
+}
+
+.gradient-card-2 {
+  background: linear-gradient(45deg, #48cae4, #023e8a);
+  border: none;
+  color: white;
+}
+
+.gradient-card-3 {
+  background: linear-gradient(45deg, #06ffa5, #0077b6);
+  border: none;
+  color: white;
+}
+
+/* Custom navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #2c3e50, #34495e) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Animated hero section */
+.hero-animated {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Custom buttons */
+.btn-custom {
+  background: linear-gradient(45deg, #ff9a9e, #fecfef);
+  border: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 12px 30px;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(45deg, #fecfef, #ff9a9e);
+  transform: scale(1.05);
+}

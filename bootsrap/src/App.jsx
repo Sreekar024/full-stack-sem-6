@@ -3,6 +3,7 @@ import BasicNavbar from "./components/navbar";
 import HeroSection from "./components/hero";
 import CardsSection from "./components/cards";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './custom.css';
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
       <BasicNavbar />
       <HeroSection />
       <CardsSection />
-      <div style={{ padding: "50px" }}>
-        <h2>Bootstrap Components</h2>
-        <BasicExample />
+      <div className="gradient-bg py-5">
+        <div className="container">
+          <BasicExample />
+        </div>
       </div>
     </div>
   );

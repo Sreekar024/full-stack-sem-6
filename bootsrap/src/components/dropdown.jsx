@@ -2,17 +2,21 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function BasicExample() {
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
-      </Dropdown.Toggle>
+    <div className="text-center">
+      <h3 className="mb-4">📦 Interactive Components</h3>
+      <Dropdown>
+        <Dropdown.Toggle className="btn-custom" id="dropdown-basic">
+          🌈 Choose Your Path
+        </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-1">🚀 Frontend Development</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">🛠️ Backend Development</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">🎨 UI/UX Design</Dropdown.Item>
+          <Dropdown.Item href="#/action-4">📊 Data Science</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    </div>
   );
 }
 
