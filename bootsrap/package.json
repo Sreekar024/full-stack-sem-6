@@ -3,10 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sreekar024.github.io/full-stack-sem-6/bootsrap/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -b gh-pages",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
