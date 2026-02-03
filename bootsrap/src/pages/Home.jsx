@@ -1,7 +1,7 @@
-import BasicExample from "./components/dropdown";
-import BasicNavbar from "./components/navbar";
-import HeroSection from "./components/hero";
-import CardsSection from "./components/cards";
+import BasicExample from "../components/dropdown";
+import BasicNavbar from "../components/navbar";
+import HeroSection from "../components/hero";
+import CardsSection from "../components/cards";
 
 function Home() {
   return (
