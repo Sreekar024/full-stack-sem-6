@@ -1,6 +1,9 @@
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useNavigate } from 'react-router-dom';
 
 function BasicExample() {
+  const navigate = useNavigate();
+
   return (
     <div className="text-center">
       <h3 className="mb-4">📦 Interactive Components</h3>
@@ -10,10 +13,10 @@ function BasicExample() {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">🚀 Frontend Development</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">🛠️ Backend Development</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">🎨 UI/UX Design</Dropdown.Item>
-          <Dropdown.Item href="#/action-4">📊 Data Science</Dropdown.Item>
+          <Dropdown.Item onClick={() => navigate('/frontend')}>🚀 Frontend Development</Dropdown.Item>
+          <Dropdown.Item onClick={() => navigate('/backend')}>🛠️ Backend Development</Dropdown.Item>
+          <Dropdown.Item onClick={() => navigate('/ui-ux-design')}>🎨 UI/UX Design</Dropdown.Item>
+          <Dropdown.Item onClick={() => navigate('/data-science')}>📊 Data Science</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </div>

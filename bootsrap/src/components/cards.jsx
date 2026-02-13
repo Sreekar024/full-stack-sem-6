@@ -3,8 +3,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
 
 function CardsSection() {
+  const navigate = useNavigate();
+
   return (
     <Container className="py-5">
       <Row>
@@ -16,7 +19,7 @@ function CardsSection() {
               <Card.Text>
                 Modern web development using React, Bootstrap and cutting-edge technologies.
               </Card.Text>
-              <Button variant="light">🔍 Discover</Button>
+              <Button variant="light" onClick={() => navigate('/web-development')}>🔍 Discover</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -28,7 +31,7 @@ function CardsSection() {
               <Card.Text>
                 Complete full stack development with modern frontend and robust backend solutions.
               </Card.Text>
-              <Button variant="light">⚡ Build</Button>
+              <Button variant="light" onClick={() => navigate('/full-stack')}>⚡ Build</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -40,7 +43,7 @@ function CardsSection() {
               <Card.Text>
                 Beautiful responsive design using Bootstrap components and custom animations.
               </Card.Text>
-              <Button variant="light">🎆 Create</Button>
+              <Button variant="light" onClick={() => navigate('/ui-ux-design')}>🎆 Create</Button>
             </Card.Body>
           </Card>
         </Col>

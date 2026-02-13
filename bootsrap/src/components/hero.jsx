@@ -2,8 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
 
 function HeroSection() {
+  const navigate = useNavigate();
+
   return (
     <Container fluid className="hero-animated text-white py-5">
       <Container>
@@ -11,8 +14,8 @@ function HeroSection() {
           <Col md={8}>
             <h1 className="display-3">🎆 Innovation Starts Here</h1>
             <p className="lead fs-4">Full Stack Development - Semester 6 | Sreekar's Project</p>
-            <Button className="btn-custom me-3" size="lg">🚀 Explore Now</Button>
-            <Button variant="outline-light" size="lg">📚 Learn More</Button>
+            <Button className="btn-custom me-3" size="lg" onClick={() => navigate('/about')}>🚀 Explore Now</Button>
+            <Button variant="outline-light" size="lg" onClick={() => navigate('/about')}>📚 Learn More</Button>
           </Col>
         </Row>
       </Container>
