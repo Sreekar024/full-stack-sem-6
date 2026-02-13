@@ -1,16 +1,101 @@
-# React + Vite
+# Bootstrap React Router Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React, Bootstrap, and React Router demonstrating responsive design and client-side routing.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project showcases a Full Stack Development portfolio website with multiple pages covering different technology domains including Web Development, Full Stack, UI/UX Design, Frontend, Backend, and Data Science.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React Router Navigation** - Seamless client-side routing between pages
+- **Bootstrap Components** - Responsive UI with Cards, Navbar, Buttons, and Dropdowns
+- **Multiple Pages** - 8 different pages with consistent design
+- **Interactive Elements** - All buttons and links are functional with routing
+- **Responsive Design** - Mobile-friendly layout using Bootstrap grid system
+- **Custom Styling** - Enhanced with custom CSS animations and gradients
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+bootsrap/
+├── src/
+│   ├── components/
+│   │   ├── navbar.jsx       # Navigation bar with routing
+│   │   ├── hero.jsx         # Hero section with CTA buttons
+│   │   ├── cards.jsx        # Service cards with navigation
+│   │   └── dropdown.jsx     # Interactive dropdown menu
+│   ├── pages/
+│   │   ├── Home.jsx         # Landing page
+│   │   ├── About.jsx        # About/Project info page
+│   │   ├── WebDevelopment.jsx
+│   │   ├── FullStack.jsx
+│   │   ├── UIUXDesign.jsx
+│   │   ├── Frontend.jsx
+│   │   ├── Backend.jsx
+│   │   └── DataScience.jsx
+│   ├── App.jsx              # Main app with routes
+│   └── main.jsx             # Entry point
+└── package.json
+```
+
+## 🛠️ Technologies Used
+
+- **React** 19.2.0 - UI library
+- **React Router DOM** 7.1.3 - Client-side routing
+- **Bootstrap** 5.3.8 - CSS framework
+- **React Bootstrap** 2.10.10 - Bootstrap components for React
+- **Vite** 7.2.4 - Build tool and dev server
+
+## 📦 Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 🌐 Routes
+
+| Route | Page | Description |
+|-------|------|-------------|
+| `/` | Home | Landing page with hero, cards, and dropdown |
+| `/about` | About | Project information and tech stack |
+| `/web-development` | Web Development | Web development overview |
+| `/full-stack` | Full Stack | Full stack development info |
+| `/ui-ux-design` | UI/UX Design | Design principles and tools |
+| `/frontend` | Frontend | Frontend technologies |
+| `/backend` | Backend | Backend development |
+| `/data-science` | Data Science | Data science and ML |
+
+## 🎯 Key Components
+
+### Navbar
+- Responsive navigation with Home and About links
+- Uses React Router Link components
+
+### Hero Section
+- Eye-catching header with call-to-action buttons
+- Buttons navigate to About page
+
+### Cards Section
+- Three service cards (Web Dev, Full Stack, UI/UX)
+- Each card button navigates to respective page
+
+### Dropdown Menu
+- Interactive dropdown with 4 career path options
+- All items navigate to dedicated pages
+
+## 👨‍💻 Author
+
+**Sreekar Chimbili**  
+Full Stack Development - Semester 6
+
+## 📄 License
+
+This project is created for educational purposes.
