@@ -17,6 +17,8 @@ function BasicExample() {
           <Dropdown.Item onClick={() => navigate('/backend')}>🛠️ Backend Development</Dropdown.Item>
           <Dropdown.Item onClick={() => navigate('/ui-ux-design')}>🎨 UI/UX Design</Dropdown.Item>
           <Dropdown.Item onClick={() => navigate('/data-science')}>📊 Data Science</Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item onClick={() => navigate('/portfolio')}>💼 Portfolio</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </div>
