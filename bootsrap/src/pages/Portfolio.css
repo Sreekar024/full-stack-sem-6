@@ -8,8 +8,30 @@
 }
 
 .portfolio-page.dark-theme {
-  background: #1a1a1a;
+  background: #0f0f1e;
   color: #f0f0f0;
+}
+
+.portfolio-page.dark-theme h2,
+.portfolio-page.dark-theme h3,
+.portfolio-page.dark-theme h5 {
+  color: #f0f0f0 !important;
+}
+
+.portfolio-page.dark-theme .text-center {
+  color: #f0f0f0 !important;
+}
+
+.portfolio-page.dark-theme h2.text-center {
+  color: #f0f0f0 !important;
+}
+
+.portfolio-page.dark-theme .container h2 {
+  color: #f0f0f0 !important;
+}
+
+.portfolio-page.dark-theme .container h3 {
+  color: #f0f0f0 !important;
 }
 
 /* Hero Section */
@@ -36,6 +58,10 @@
   background: #f8f9fa;
 }
 
+.portfolio-page.dark-theme .stats-section {
+  background: #1a1a1a;
+}
+
 .stat-card {
   background: white;
   border-radius: 15px;
@@ -44,6 +70,14 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border: 2px solid transparent;
   transition: all 0.3s ease;
+  color: #333;
+}
+
+.portfolio-page.dark-theme .stat-card {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #3a3a3a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .stat-card:hover {
@@ -66,9 +100,17 @@
   letter-spacing: 1px;
 }
 
+.portfolio-page.dark-theme .stat-label {
+  color: #b0b0b0;
+}
+
 /* Categories Section */
 .categories-section {
   background: #f8f9fa;
+}
+
+.portfolio-page.dark-theme .categories-section {
+  background: #1a1a1a;
 }
 
 .category-card {
@@ -78,6 +120,13 @@
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+}
+
+.portfolio-page.dark-theme .category-card {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .category-card:hover {
@@ -101,6 +150,10 @@
   background: white;
 }
 
+.portfolio-page.dark-theme .skills-section {
+  background: #0f0f1e;
+}
+
 .skill-card {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 12px;
@@ -110,6 +163,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: #2c3e50;
+}
+
+.portfolio-page.dark-theme .skill-card {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-left-color: #667eea;
+  color: #f0f0f0;
 }
 
 .skill-card.favorited {
@@ -156,6 +216,10 @@
   font-weight: 500;
 }
 
+.portfolio-page.dark-theme .skill-category {
+  color: #b0b0b0;
+}
+
 .skill-level {
   margin-top: auto;
 }
@@ -200,6 +264,10 @@
   background: #f8f9fa;
 }
 
+.portfolio-page.dark-theme .experience-section {
+  background: #1a1a1a;
+}
+
 .experience-item {
   display: flex;
   margin-bottom: 30px;
@@ -239,6 +307,13 @@
   flex: 1;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  color: #333;
+}
+
+.portfolio-page.dark-theme .experience-content {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .experience-content:hover {
@@ -256,6 +331,14 @@
   color: #667eea;
   margin: 5px 0;
   font-weight: 500;
+}
+
+.portfolio-page.dark-theme .experience-content h5 {
+  color: #f0f0f0;
+}
+
+.portfolio-page.dark-theme .company-name {
+  color: #b8c5d6;
 }
 
 /* Animations */
@@ -307,29 +390,12 @@
 }
 
 /* Dark theme adjustments */
-.portfolio-page.dark-theme .stat-card,
-.portfolio-page.dark-theme .category-card,
-.portfolio-page.dark-theme .experience-content {
-  background: #2a2a2a;
+.portfolio-page.dark-theme .skill-header h5 {
   color: #f0f0f0;
 }
 
-.portfolio-page.dark-theme .skill-card {
-  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-  color: #f0f0f0;
-}
-
-.portfolio-page.dark-theme .skill-header h5,
-.portfolio-page.dark-theme .stat-label,
-.portfolio-page.dark-theme .experience-content h5 {
-  color: #f0f0f0;
-}
-
-.portfolio-page.dark-theme .skill-category,
-.portfolio-page.dark-theme .company-name {
-  color: #b8c5d6;
-}
-
-.portfolio-page.dark-theme .skills-section {
-  background: #1a1a1a;
+.portfolio-page.dark-theme .skill-card.favorited {
+  background: linear-gradient(135deg, #3d3d1f 0%, #2a2410 100%);
+  border-left-color: #ff7675;
+  box-shadow: 0 8px 25px rgba(255, 118, 117, 0.2);
 }

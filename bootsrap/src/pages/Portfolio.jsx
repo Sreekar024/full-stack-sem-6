@@ -1,11 +1,14 @@
 import React, { useContext, useMemo } from 'react';
 import { SkillsContext } from '../context/SkillsContext';
+import { useSelector, useDispatch } from 'react-redux';
+import { addFavorite, removeFavorite, clearFavorites } from '../redux/slices/skillsSlice';
 import BasicNavbar from '../components/navbar';
 import './Portfolio.css';
 
 function Portfolio() {
-  const { state, dispatch } = useContext(SkillsContext);
-  const portfolio = state.portfolio;
+  const { state } = useContext(SkillsContext);
+  const dispatch = useDispatch();
+  const { portfolio, favorites } = useSelector(state => state.skills);
 
   // useMemo: Calculate statistics about skills
   const skillStats = useMemo(() => {
@@ -16,9 +19,7 @@ function Portfolio() {
     };
 
     portfolio.skills.forEach(skill => {
-      // Count by category
       stats.byCategory[skill.category] = (stats.byCategory[skill.category] || 0) + 1;
-      // Count by level
       stats.byLevel[skill.level] = (stats.byLevel[skill.level] || 0) + 1;
     });
 
@@ -27,8 +28,8 @@ function Portfolio() {
 
   // useMemo: Filter favorites that are skills
   const favoriteSkills = useMemo(() => {
-    return state.favorites.filter(fav => fav.category);
-  }, [state.favorites]);
+    return favorites.filter(fav => fav.category);
+  }, [favorites]);
 
   // useMemo: Calculate experience years
   const totalExperience = useMemo(() => {
@@ -38,9 +39,9 @@ function Portfolio() {
   const toggleFavorite = (skill) => {
     const isFavorited = favoriteSkills.some(fav => fav.id === skill.id);
     if (isFavorited) {
-      dispatch({ type: 'REMOVE_FAVORITE', payload: skill.id });
+      dispatch(removeFavorite(skill.id));
     } else {
-      dispatch({ type: 'ADD_FAVORITE', payload: skill });
+      dispatch(addFavorite(skill));
     }
   };
 
@@ -160,7 +161,7 @@ function Portfolio() {
                     {skill.name}
                     <button
                       className="btn-remove"
-                      onClick={() => dispatch({ type: 'REMOVE_FAVORITE', payload: skill.id })}
+                      onClick={() => dispatch(removeFavorite(skill.id))}
                     >
                       ✕
                     </button>
@@ -169,7 +170,7 @@ function Portfolio() {
               </div>
               <button
                 className="btn btn-outline-danger mt-3"
-                onClick={() => dispatch({ type: 'CLEAR_FAVORITES' })}
+                onClick={() => dispatch(clearFavorites())}
               >
                 Clear All Favorites
               </button>
